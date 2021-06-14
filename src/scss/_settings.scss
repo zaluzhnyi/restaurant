@@ -1,0 +1,35 @@
+.wrapper {
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+    box-sizing: border-box;
+}
+
+body {
+    color: #808080;
+    font-family: "Poppins-reg", sans-serif;
+    font-size: 14px;
+    overflow-x: hidden;
+}
+
+a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+button {
+    background-color: transparent;
+    padding: 0;
+    border: none;
+    box-shadow: none;
+    cursor: pointer;
+}
+
+input {
+    padding: 0;
+    border: none;
+    box-shadow: none;
+    outline: none;
+}

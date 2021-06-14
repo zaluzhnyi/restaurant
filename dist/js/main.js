@@ -15,3 +15,14 @@ testWebP(function(support) {
         document.querySelector('body').classList.add('no-webp');
     }
 });
+new Swiper('.intro', {
+
+    slidesPerView: 1,
+    watchOverflow: true,
+    pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+    },
+
+
+});
