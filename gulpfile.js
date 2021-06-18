@@ -1,7 +1,7 @@
 // const autoPrefixer = require('gulp-autoprefixer');
 // const rename = require('gulp-rename');
 
-let project_folder = "dist";
+let project_folder = "docs";
 let source_folder = "src";
 
 let path = {
