@@ -465,6 +465,12 @@ textarea {
 }
 
 @font-face {
+  font-family: "Lobster-reg";
+  src: url("../fonts/LobsterTwo-Regular.woff2") format("woff2"), url("../fonts/LobsterTwo-Regular.woff") format("woff");
+  font-display: swap;
+}
+
+@font-face {
   font-family: "Lobster-bold";
   src: url("../fonts/LobsterTwo-Bold.woff2") format("woff2"), url("../fonts/LobsterTwo-Bold.woff") format("woff");
   font-display: swap;
@@ -532,6 +538,36 @@ textarea {
   padding-right: 15px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+}
+
+.heading {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.heading h2 {
+  font-family: "Sacramento-reg", sans-serif;
+  font-size: 36px;
+  color: #ff3a2d;
+  margin-bottom: 11px;
+}
+
+.heading h3 {
+  font-family: "Lobster-reg", sans-serif;
+  font-size: 36px;
+  color: #222222;
+  margin-bottom: 11px;
 }
 
 body {
@@ -872,26 +908,27 @@ select:focus {
 }
 
 .welcome {
+  padding-top: 10px;
   max-width: 652px;
-  line-height: 1.35;
   margin-right: 150px;
 }
 
-.welcome h2 {
-  font-family: "Lobster-bolditalic", sans-serif;
-  font-size: 48px;
-  color: #ff3a2d;
-  margin-bottom: 11px;
+.welcome .heading {
+  display: block;
 }
 
-.welcome h2 span {
+.welcome .heading h2 {
+  font-family: "Lobster-bolditalic", sans-serif;
+  font-size: 48px;
+}
+
+.welcome .heading h3 {
+  font-family: "Lobster-bolditalic", sans-serif;
   font-size: 28px;
-  color: #222222;
-  display: table;
 }
 
 .welcome p {
-  margin-top: 30px;
+  margin-top: 32px;
   line-height: 2;
 }
 
@@ -933,6 +970,7 @@ select:focus {
   background-color: #ff3a2d;
   font-family: "Poppins-reg";
   font-size: 16px;
+  position: relative;
 }
 
 .book-table form {
@@ -994,6 +1032,88 @@ select:focus {
 
 .book-table h2 svg {
   margin: 0 10px;
+}
+
+.book-table img {
+  max-width: 358px;
+  max-height: 275px;
+  position: absolute;
+  z-index: -1;
+  left: 176px;
+  top: 425px;
+  overflow: hidden;
+}
+
+.wr-promotions {
+  padding: 45px 0;
+}
+
+.promotions-card {
+  font-family: "Lobster-reg", sans-serif;
+  color: #1c1c1c;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 70px;
+}
+
+.promotions-card .cards-image {
+  height: 230px;
+  overflow: hidden;
+  border-radius: 60px 0;
+  margin-bottom: 31px;
+}
+
+.promotions-card .cards-image.even {
+  -webkit-transform: scaleX(-1);
+      -ms-transform: scaleX(-1);
+          transform: scaleX(-1);
+}
+
+.promotions-card .cards-image img {
+  max-width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.promotions-card p {
+  font-size: 24px;
+}
+
+.promotions-card p span {
+  font-size: 16px;
+  text-decoration: line-through;
+}
+
+.button-position {
+  position: relative;
+  width: 100%;
+}
+
+.button-position .prev-arrow,
+.button-position .next-arrow {
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+          transform: translateY(-50%);
+  z-index: 2;
+}
+
+.button-position .prev-arrow {
+  left: -25px;
+}
+
+.button-position .next-arrow {
+  right: -25px;
 }
 
 .webp .wr-banner { background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.8)), to(rgba(0, 0, 0, 0.5))), url(../media/bg/banner.webp) no-repeat center top fixed; }

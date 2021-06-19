@@ -26,3 +26,25 @@ new Swiper('.intro', {
 
 
 });
+new Swiper('.promotions-container', {
+
+    navigation: {
+        nextEl: '.next-arrow',
+        prevEl: '.prev-arrow'
+    },
+    slidesPerView: 4,
+    watchOverflow: true,
+    spaceBetween: 31,
+    breakpoints: {
+        480: {
+            slidesPerView: 2
+        },
+        955: {
+            slidesPerView: 4
+        }
+
+    }
+
+
+
+});

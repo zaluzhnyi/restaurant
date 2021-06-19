@@ -7,6 +7,25 @@
     box-sizing: border-box;
 }
 
+.heading {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    h2 {
+        font-family: "Sacramento-reg", sans-serif;
+        font-size: 36px;
+        color: #ff3a2d;
+        margin-bottom: 11px;
+    }
+    h3 {
+        font-family: "Lobster-reg", sans-serif;
+        font-size: 36px;
+        color: #222222;
+        margin-bottom: 11px;
+    }
+}
+
 body {
     color: #808080;
     font-family: "Poppins-reg", sans-serif;

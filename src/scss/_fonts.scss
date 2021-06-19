@@ -1,4 +1,10 @@
 @font-face {
+    font-family: "Lobster-reg";
+    src: url("../fonts/LobsterTwo-Regular.woff2") format("woff2"), url("../fonts/LobsterTwo-Regular.woff") format("woff");
+    font-display: swap;
+}
+
+@font-face {
     font-family: "Lobster-bold";
     src: url("../fonts/LobsterTwo-Bold.woff2") format("woff2"), url("../fonts/LobsterTwo-Bold.woff") format("woff");
     font-display: swap;
