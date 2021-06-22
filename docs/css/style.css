@@ -1045,7 +1045,7 @@ select:focus {
 }
 
 .wr-promotions {
-  padding: 45px 0;
+  padding: 45px 0 218px;
 }
 
 .promotions-card {
@@ -1114,6 +1114,114 @@ select:focus {
 
 .button-position .next-arrow {
   right: -25px;
+}
+
+.wr-about .wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.about-text {
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  max-width: 790px;
+  padding-top: 39px;
+}
+
+.about-text p {
+  line-height: 2;
+  margin: 35px 0 50px;
+}
+
+.about-text .heading {
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.about-image {
+  margin-left: 39px;
+  max-height: 730px;
+  overflow: hidden;
+}
+
+.about-image img {
+  max-width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: left;
+     object-position: left;
+}
+
+.block {
+  padding-left: 16px;
+}
+
+.block .block__title {
+  position: relative;
+  cursor: pointer;
+  font-family: "Poppins-medium", sans-serif;
+  font-size: 16px;
+  color: #222;
+  margin-bottom: 25px;
+}
+
+.block .block__title::before,
+.block .block__title::after {
+  content: '';
+  position: absolute;
+  width: 7px;
+  height: 1px;
+  background-color: #222;
+  font-size: 16px;
+  top: 50%;
+  -webkit-transition: all 0.3s ease 0s;
+  -o-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+}
+
+.block .block__title::before {
+  -webkit-transform: rotate(40deg);
+      -ms-transform: rotate(40deg);
+          transform: rotate(40deg);
+  left: 450px;
+}
+
+.block .block__title::after {
+  -webkit-transform: rotate(-40deg);
+      -ms-transform: rotate(-40deg);
+          transform: rotate(-40deg);
+  left: 455.5px;
+}
+
+.block .block__title.active {
+  color: #00c5d2;
+  margin: 0;
+}
+
+.block .block__title.active::before,
+.block .block__title.active::after {
+  background-color: #00c5d2;
+}
+
+.block .block__title.active::after {
+  -webkit-transform: rotate(40deg);
+      -ms-transform: rotate(40deg);
+          transform: rotate(40deg);
+}
+
+.block .block__title.active::before {
+  -webkit-transform: rotate(-40deg);
+      -ms-transform: rotate(-40deg);
+          transform: rotate(-40deg);
+}
+
+.block p {
+  display: none;
+  margin: 1px 0 28px;
+  padding-left: 15px;
 }
 
 .webp .wr-banner { background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.8)), to(rgba(0, 0, 0, 0.5))), url(../media/bg/banner.webp) no-repeat center top fixed; }

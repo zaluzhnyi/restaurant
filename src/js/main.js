@@ -44,7 +44,10 @@ new Swiper('.promotions-container', {
         }
 
     }
+});
 
-
-
+$(document).ready(function() {
+    $('.block__title').click(function() {
+        $(this).toggleClass('active').next().slideToggle(300);
+    });
 });
