@@ -3,9 +3,16 @@
 @import "./settings.scss";
 // wr-banner
 .wr-banner {
-    background: linear-gradient( rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.5)), url("../media/bg/banner.jpg") no-repeat center top fixed;
-    background-size: cover;
+    background-image: linear-gradient( rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.5)), url("../media/bg/banner.jpg");
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: 0 0, center top;
+    background-size: initial, cover;
     padding: 26px 0 35px;
+}
+
+.webp .wr-banner {
+    background-size: cover;
 }
 
 .search-login {
@@ -389,7 +396,8 @@
 .about-image {
     margin-left: 39px;
     max-height: 730px;
-    overflow: hidden;
+    min-width: 600px;
+    overflow: visible;
     img {
         max-width: 100%;
         height: 100%;
@@ -401,49 +409,125 @@
 .block {
     padding-left: 16px;
     .block__title {
-        position: relative;
-        cursor: pointer;
         font-family: "Poppins-medium", sans-serif;
         font-size: 16px;
         color: #222;
         margin-bottom: 25px;
+        margin-right: 75px;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
     }
-    .block__title::before,
-    .block__title::after {
+    .accordion {
+        display: flex;
+        flex-wrap: nowrap;
+        cursor: pointer;
+    }
+    .accordion span {
+        position: relative;
+    }
+    .accordion span::before,
+    .accordion span::after {
         content: '';
         position: absolute;
         width: 7px;
         height: 1px;
         background-color: #222;
         font-size: 16px;
-        top: 50%;
+        top: 20%;
         transition: all 0.3s ease 0s;
     }
-    .block__title::before {
+    .accordion span::before {
         transform: rotate(40deg);
-        left: 450px;
+        left: 0px;
     }
-    .block__title::after {
+    .accordion span::after {
         transform: rotate(-40deg);
-        left: 455.5px;
+        left: 5.5px;
     }
-    .block__title.active {
-        color: #00c5d2;
-        margin: 0;
-    }
-    .block__title.active::before,
-    .block__title.active::after {
-        background-color: #00c5d2;
-    }
-    .block__title.active::after {
-        transform: rotate(40deg);
-    }
-    .block__title.active::before {
-        transform: rotate(-40deg);
+    .accordion.active {
+        span::after {
+            transform: rotate(40deg);
+            background-color: #00c5d2;
+        }
+        span::before {
+            transform: rotate(-40deg);
+            background-color: #00c5d2;
+        }
+        .block__title {
+            color: #00c5d2;
+            margin-bottom: 0;
+        }
     }
     p {
         display: none;
         margin: 1px 0 28px;
         padding-left: 15px;
+    }
+}
+
+// wr-delivary
+.wr-delivary {
+    background-image: linear-gradient( rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.5)), url("../media/bg/delivary.jpg");
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: 0 0, center top;
+    background-size: initial, cover;
+    padding: 200px 0;
+    h3 {
+        color: #fff;
+    }
+}
+
+.webp .wr-delivary {
+    background-size: cover;
+}
+
+.information-container {
+    width: inherit;
+    display: flex;
+    margin-top: 117px;
+    .information-card {
+        position: relative;
+        padding: 80px 40px 52px;
+        box-sizing: border-box;
+        background-color: #fff;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        box-sizing: border-box;
+        &:not(:last-child) {
+            margin-right: 30px;
+        }
+        h4 {
+            font-family: "Lobster-reg", sans-serif;
+            color: #ff3a2d;
+            font-size: 28px;
+        }
+        p {
+            margin-top: 23px;
+            text-align: center;
+            line-height: 2;
+        }
+        span {
+            position: absolute;
+            bottom: 232px;
+            width: 100px;
+            height: 80px;
+            overflow: hidden;
+            box-shadow: 0px 2px 8px 0 rgba(33, 30, 31, 0.5);
+            background-color: #fff;
+            border-radius: 0 30px 0 30px;
+            padding: 10px 20px;
+            box-sizing: border-box;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+        }
     }
 }
