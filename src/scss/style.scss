@@ -7,24 +7,42 @@
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-position: 0 0, center top;
-    background-size: initial, cover;
-    padding: 26px 0 35px;
+    background-size: cover;
+    header {
+        padding-top: 26px;
+    }
+    .wrapper {
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
 }
 
 .webp .wr-banner {
     background-size: cover;
 }
 
+.logo {
+    position: absolute;
+    z-index: 10;
+    left: 0;
+    bottom: 0px;
+    transform: translateY(45%);
+}
+
 .search-login {
+    position: relative;
     display: flex;
     align-items: center;
     justify-content: flex-end;
     letter-spacing: 0.13px;
     padding-bottom: 26px;
+    white-space: nowrap;
     p {
         color: #fff;
         line-height: 1.07;
-        margin-right: 310px;
+        margin-right: 139px;
         a {
             color: #ff3a2d;
         }
@@ -43,26 +61,24 @@
 }
 
 .search-container {
-    position: relative;
+    display: flex;
+    flex-wrap: nowrap;
+    height: 28px;
     margin-right: 168px;
     input {
-        position: absolute;
-        left: -170px;
-        width: 200px;
-        height: 28px;
+        width: 170px;
+        height: 100%;
         opacity: 0.7;
-        border-radius: 6px;
+        border-radius: 6px 0 0 6px;
         background-color: #fff;
         box-sizing: border-box;
-        padding: 8px 35px 7px 15px;
+        padding: 7px 35px 10px 15px;
         font-family: "Sans-semibold", sans-serif;
     }
     button {
-        position: relative;
-        z-index: 2;
         background-color: #ff3a2d;
         width: 30px;
-        height: 28px;
+        height: 100%;
         border-radius: 0 6px 6px 0;
         display: flex;
         align-items: center;
@@ -128,15 +144,18 @@
     box-shadow: 9999px 0 0 #fff;
 }
 
-.intro {
-    padding-top: 218px;
-    text-align: center;
-    h1 {
+.intro-slide {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: auto;
+    h2 {
+        line-height: 1.1;
         font-family: "Sacramento-reg", sans-serif;
         color: #00c5d2;
         font-size: 36px;
     }
-    h2 {
+    h3 {
         font-family: "Lobster-bold", sans-serif;
         color: #fff;
         font-size: 48px;
@@ -166,7 +185,7 @@
             border: solid 2px #ff3a2d;
             padding: 17px 33px;
             box-sizing: border-box;
-            margin-right: 45px;
+            margin-right: 22px;
         }
         .btn-menu {
             width: 150px;
@@ -174,45 +193,34 @@
             border-radius: 6px;
             border: solid 2px #ff3a2d;
             padding: 17px 34px;
-            background-color: #ff3a2d;
             box-sizing: border-box;
+            margin-left: 22px;
         }
-    }
-    .intro-slide {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
+        & :hover {
+            background-color: #ff3a2d;
+        }
     }
 }
 
-.pagination-position {
-    position: relative;
-    width: 100%;
-    height: 100%;
-    padding-bottom: 195px;
-    .swiper-pagination {
-        position: absolute;
-        z-index: 2;
-        left: 50%;
-        margin-right: -50%;
-        transform: translate(-50%, -50%);
-        margin-top: 181px;
-        box-sizing: content-box;
-    }
-    .swiper-pagination-bullet {
-        width: 10px;
-        height: 10px;
-        border-radius: 3.5px;
-        background-color: #fff;
-        margin-right: 8px;
-        opacity: 1;
-    }
-    .swiper-pagination-bullet-active {
-        height: 20px;
+.swiper-pagination-bullet {
+    width: 10px;
+    height: 10px;
+    border-radius: 3.5px;
+    background-color: #fff;
+    margin-right: 8px;
+    opacity: 1;
+}
+
+.swiper-pagination-bullet-active {
+    height: 20px;
+    background-color: #ff3a2d;
+}
+
+.swiper-pagination {
+    position: inherit;
+    padding-bottom: 35px;
+    & :hover {
         background-color: #ff3a2d;
-    }
-    .swiper-wrapper {
-        padding-bottom: 5px;
     }
 }
 
@@ -237,6 +245,7 @@
         h3 {
             font-family: "Lobster-bolditalic", sans-serif;
             font-size: 28px;
+            margin-bottom: 12px;
         }
     }
     p {
@@ -314,15 +323,15 @@
         max-height: 275px;
         position: absolute;
         z-index: -1;
-        left: 176px;
-        top: 425px;
+        bottom: -132px;
+        right: -159px;
         overflow: hidden;
     }
 }
 
 // wr-promotions
 .wr-promotions {
-    padding: 45px 0 218px;
+    padding: 45px 0 109px;
 }
 
 .promotions-card {
@@ -364,6 +373,7 @@
         top: 50%;
         transform: translateY(-50%);
         z-index: 2;
+        border-radius: 50%;
     }
     .prev-arrow {
         left: -25px;
@@ -376,6 +386,7 @@
 // wr-about
 .wr-about {
     .wrapper {
+        padding-top: 115px;
         display: flex;
     }
 }
@@ -472,7 +483,7 @@
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-position: 0 0, center top;
-    background-size: initial, cover;
+    background-size: cover;
     padding: 200px 0;
     h3 {
         color: #fff;
@@ -484,50 +495,135 @@
 }
 
 .information-container {
+    width: 100%;
     width: inherit;
     display: flex;
-    margin-top: 117px;
-    .information-card {
-        position: relative;
-        padding: 80px 40px 52px;
-        box-sizing: border-box;
+    justify-content: space-between;
+    margin-top: 120px;
+    position: relative;
+}
+
+.information-card {
+    position: relative;
+    padding: 80px 40px 44px;
+    box-sizing: border-box;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-sizing: border-box;
+    flex-basis: 32%;
+    h4 {
+        font-family: "Lobster-reg", sans-serif;
+        color: #ff3a2d;
+        font-size: 28px;
+    }
+    p {
+        margin-top: 15px;
+        text-align: center;
+        line-height: 2;
+    }
+    span {
+        position: absolute;
+        top: 0px;
+        transform: translateY(-50%);
+        width: 100px;
+        height: 80px;
+        overflow: hidden;
+        box-shadow: 0px 2px 8px 0 rgba(33, 30, 31, 0.5);
         background-color: #fff;
+        border-radius: 0 30px 0 30px;
+        padding: 10px 20px;
+        box-sizing: border-box;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+}
+
+// wr-menu
+.wr-menu {
+    .wrapper {
+        padding-top: 188px;
         display: flex;
         flex-direction: column;
         align-items: center;
-        box-sizing: border-box;
-        &:not(:last-child) {
-            margin-right: 30px;
-        }
-        h4 {
-            font-family: "Lobster-reg", sans-serif;
+    }
+    .button-menu {
+        width: 200px;
+        height: 70px;
+        margin-top: 25px;
+        border-radius: 6px;
+        background-color: #ff3a2d;
+        font-family: "Poppins-semibold", sans-serif;
+        font-size: 16px;
+        color: #fff;
+    }
+}
+
+.filter-menu {
+    min-width: 698px;
+    margin: 79px 0 85px 0;
+    display: flex;
+    justify-content: space-between;
+    button {
+        font-family: "Poppins-semibold", sans-serif;
+        font-size: 20px;
+        &.active {
             color: #ff3a2d;
-            font-size: 28px;
+            text-decoration: underline;
         }
+    }
+}
+
+.container-menu {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.menu-card {
+    display: flex;
+    flex-basis: 46%;
+    flex-grow: 0;
+    margin-bottom: 45px;
+    .food-image {
+        max-width: 97px;
+        max-height: 101px;
+        overflow: hidden;
+        border-radius: 20px 0;
+        margin-right: 15px;
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+    .card-text {
+        padding: 9px 0 13px 0;
         p {
-            margin-top: 23px;
-            text-align: center;
-            line-height: 2;
+            max-width: 320px;
+            font-size: 14px;
+            line-height: 1.86;
+            margin-top: 15px;
         }
-        span {
-            position: absolute;
-            bottom: 232px;
-            width: 100px;
-            height: 80px;
-            overflow: hidden;
-            box-shadow: 0px 2px 8px 0 rgba(33, 30, 31, 0.5);
-            background-color: #fff;
-            border-radius: 0 30px 0 30px;
-            padding: 10px 20px;
-            box-sizing: border-box;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            img {
-                width: 100%;
-                height: 100%;
-                object-fit: cover;
-            }
+        .name-food {
+            font-family: "Poppins-semibold", sans-serif;
+            font-size: 18px;
+            color: #222;
         }
+    }
+    .price {
+        font-family: "Poppins-semibold", sans-serif;
+        color: #222;
+        font-size: 24px;
+        margin-left: auto;
+        margin-top: 12px;
     }
 }

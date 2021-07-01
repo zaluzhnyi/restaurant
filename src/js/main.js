@@ -19,6 +19,9 @@ new Swiper('.intro', {
 
     slidesPerView: 1,
     watchOverflow: true,
+    autoplay: {
+        delay: 5000,
+    },
     pagination: {
         el: ".swiper-pagination",
         clickable: true,
@@ -31,6 +34,9 @@ new Swiper('.promotions-container', {
     navigation: {
         nextEl: '.next-arrow',
         prevEl: '.prev-arrow'
+    },
+    autoplay: {
+        delay: 5000,
     },
     slidesPerView: 4,
     watchOverflow: true,
@@ -52,3 +58,8 @@ $(document).ready(function() {
     });
 
 });
+var btn = document.getElementById('btn');
+btn.addEventListener('click', function() {
+    this.classList.toggle('active', true);
+});
+$('button').mouseup(function() { this.blur() })
