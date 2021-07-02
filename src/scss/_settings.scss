@@ -46,6 +46,19 @@ button {
     cursor: pointer;
 }
 
+.button-position {
+    position: relative;
+    width: 100%;
+    .prev-arrow,
+    .next-arrow {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        z-index: 2;
+        border-radius: 50%;
+    }
+}
+
 input {
     padding: 0;
     border: none;
@@ -58,4 +71,8 @@ button:focus,
 input:focus,
 select:focus {
     box-shadow: 0 0 24px rgba(51, 71, 255, 0.9);
+}
+
+.gradient {
+    position: relative;
 }

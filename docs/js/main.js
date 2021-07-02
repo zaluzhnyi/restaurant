@@ -52,6 +52,21 @@ new Swiper('.promotions-container', {
     }
 });
 
+new Swiper('.stuff-container', {
+
+    navigation: {
+        nextEl: '.next-arrow',
+        prevEl: '.prev-arrow'
+    },
+    autoplay: {
+        delay: 5000,
+    },
+    slidesPerView: 3,
+    watchOverflow: true,
+    spaceBetween: 31,
+
+});
+
 $(document).ready(function() {
     $('.accordion').click(function() {
         $(this).toggleClass('active').next().slideToggle(300);
@@ -62,4 +77,3 @@ var btn = document.getElementById('btn');
 btn.addEventListener('click', function() {
     this.classList.toggle('active', true);
 });
-$('button').mouseup(function() { this.blur() })
