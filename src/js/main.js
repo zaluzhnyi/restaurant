@@ -1,6 +1,6 @@
 function testWebP(callback) {
 
-    var webP = new Image();
+    let webP = new Image();
     webP.onload = webP.onerror = function() {
         callback(webP.height == 2);
     };
@@ -73,7 +73,21 @@ $(document).ready(function() {
     });
 
 });
-var btn = document.getElementById('btn');
+
+let btn = document.getElementById('btn');
 btn.addEventListener('click', function() {
     this.classList.toggle('active', true);
 });
+
+function playVideo() {
+    let popup = document.getElementById("myPopup");
+    popup.classList.toggle("show");
+
+
+    if (popup.paused || popup.addEventListener != 'ended') {
+        popup.play();
+    } else {
+        popup.pause();
+    }
+
+}
