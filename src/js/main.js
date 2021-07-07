@@ -67,6 +67,21 @@ new Swiper('.stuff-container', {
 
 });
 
+new Swiper('.feedback-container', {
+
+    slidesPerView: 1,
+    watchOverflow: true,
+    autoplay: {
+        delay: 5000,
+    },
+    navigation: {
+        nextEl: '.next-arrow',
+        prevEl: '.prev-arrow'
+    },
+
+
+});
+
 $(document).ready(function() {
     $('.accordion').click(function() {
         $(this).toggleClass('active').next().slideToggle(300);
