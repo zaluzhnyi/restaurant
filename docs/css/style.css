@@ -557,6 +557,11 @@ textarea {
   text-align: center;
 }
 
+.heading svg {
+  height: 28px;
+  fill: #00c5d2;
+}
+
 .heading h2 {
   font-family: "Sacramento-reg", sans-serif;
   font-size: 36px;
@@ -2001,6 +2006,106 @@ select:focus {
   color: #ff3a2d;
 }
 
+.no-webp .wr-letter {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.8)), to(rgba(0, 0, 0, 0.5))), url("../media/bg/letter.jpg"); }
+
+.no-webp .wr-letter {
+  background-image: -o-linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.5)), url("../media/bg/letter.jpg"); }
+
+.no-webp .wr-letter {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.5)), url("../media/bg/letter.jpg"); }
+
+.wr-letter {
+  background-repeat: no-repeat;
+  background-position: 0 0, center top;
+  background-size: cover;
+  height: 100vh;
+}
+
+.wr-letter {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.wr-letter .heading {
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.wr-letter .heading h3 {
+  color: #fff;
+}
+
+.wr-letter .heading svg {
+  fill: #fff;
+}
+
+.wr-letter .letter-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.wr-letter .letter-container p {
+  max-width: 574px;
+  color: #fff;
+  line-height: 2;
+}
+
+.wr-letter .email-container {
+  margin-left: 96px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  height: 85px;
+}
+
+.wr-letter .email-container input {
+  width: 410px;
+  height: 100%;
+  background-color: #fff;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 36px 212px 36px 26px;
+}
+
+.wr-letter .email-container button {
+  background-image: -webkit-gradient(linear, left bottom, left top, from(#00fff0), to(#40b1e5));
+  background-image: -o-linear-gradient(bottom, #00fff0, #40b1e5);
+  background-image: linear-gradient(to top, #00fff0, #40b1e5);
+  width: 90px;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.wr-letter .email-container button svg {
+  width: 36px;
+  height: 36px;
+  fill: #fff;
+}
+
 .webp .wr-banner { background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.8)), to(rgba(0, 0, 0, 0.5))), url(../media/bg/banner.webp); }
 
 .webp .wr-banner { background-image: -o-linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.5)), url(../media/bg/banner.webp); }
@@ -2018,3 +2123,9 @@ select:focus {
 .webp .wr-event-video { background-image: -o-linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.5)), url(../media/bg/restaurant.webp); }
 
 .webp .wr-event-video { background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.5)), url(../media/bg/restaurant.webp); }
+
+.webp .wr-letter { background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.8)), to(rgba(0, 0, 0, 0.5))), url(../media/bg/letter.webp); }
+
+.webp .wr-letter { background-image: -o-linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.5)), url(../media/bg/letter.webp); }
+
+.webp .wr-letter { background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.5)), url(../media/bg/letter.webp); }

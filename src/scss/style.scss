@@ -734,7 +734,6 @@
 //wr-event-video
 .wr-event-video {
     background-image: linear-gradient( rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.5)), url("../media/bg/restaurant.jpg");
-    // animation: bg 20s linear infinite;
     background-repeat: no-repeat;
     background-position: 0 0, center top;
     background-size: cover;
@@ -964,17 +963,61 @@
     }
 }
 
-// @keyframes bg {
-//     0% {
-//         background-image: url("../media/bg/restaurant.jpg");
-//     }
-//     33% {
-//         background-image: url("../media/bg/singers.jpg");
-//     }
-//     66% {
-//         background-image: url("../media/bg/food.jpg");
-//     }
-//     100% {
-//         background-image: url("../media/bg/food.jpg");
-//     }
-// }
+.wr-letter {
+    background-image: linear-gradient( rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.5)), url("../media/bg/letter.jpg");
+    background-repeat: no-repeat;
+    background-position: 0 0, center top;
+    background-size: cover;
+    height: 100vh;
+}
+
+// wr-letter
+.wr-letter {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    .heading {
+        align-items: flex-start;
+        h3 {
+            color: #fff;
+        }
+        svg {
+            fill: #fff;
+        }
+    }
+    .letter-container {
+        display: flex;
+        justify-content: space-between;
+        p {
+            max-width: 574px;
+            color: #fff;
+            line-height: 2;
+        }
+    }
+    .email-container {
+        margin-left: 96px;
+        display: flex;
+        flex-wrap: nowrap;
+        height: 85px;
+        input {
+            width: 410px;
+            height: 100%;
+            background-color: #fff;
+            box-sizing: border-box;
+            padding: 36px 212px 36px 26px;
+        }
+        button {
+            background-image: linear-gradient(to top, #00fff0, #40b1e5);
+            width: 90px;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            svg {
+                width: 36px;
+                height: 36px;
+                fill: #fff;
+            }
+        }
+    }
+}
