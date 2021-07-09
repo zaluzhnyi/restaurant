@@ -82,6 +82,21 @@ new Swiper('.feedback-container', {
 
 });
 
+new Swiper('.blog-container', {
+
+    navigation: {
+        nextEl: '.next-arrow',
+        prevEl: '.prev-arrow'
+    },
+    autoplay: {
+        delay: 5000,
+    },
+    slidesPerView: 3,
+    watchOverflow: true,
+    spaceBetween: 31,
+
+});
+
 $(document).ready(function() {
     $('.accordion').click(function() {
         $(this).toggleClass('active').next().slideToggle(300);
