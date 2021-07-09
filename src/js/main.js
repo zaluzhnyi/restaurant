@@ -112,8 +112,6 @@ btn.addEventListener('click', function() {
 function playVideo() {
     let popup = document.getElementById("myPopup");
     popup.classList.toggle("show");
-
-
     if (popup.paused || popup.addEventListener != 'ended') {
         popup.play();
     } else {
