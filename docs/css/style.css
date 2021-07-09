@@ -2288,6 +2288,96 @@ select:focus {
      object-fit: cover;
 }
 
+.wr-open-hours {
+  padding: 80px 0;
+}
+
+.wr-open-hours .heading {
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  margin-bottom: 40px;
+}
+
+.wr-open-hours .heading svg {
+  margin-top: 12px;
+}
+
+.wr-open-hours .wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.wr-open-hours .time {
+  max-width: 358px;
+}
+
+.wr-open-hours .time ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.wr-open-hours .time ul li:not(:last-child) {
+  margin-bottom: 40px;
+}
+
+.wr-open-hours .time ul p {
+  font-family: "Poppins-semibold", sans-serif;
+  font-size: 20px;
+  text-transform: uppercase;
+}
+
+.wr-open-hours .time ul span {
+  color: #222;
+  margin-right: 20px;
+}
+
+.wr-open-hours form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  min-width: 585px;
+}
+
+.wr-open-hours form input {
+  padding-left: 30px;
+  width: inherit;
+  border: solid 1px #808080;
+  height: 50px;
+  font-size: 18px;
+  opacity: 0.7;
+  margin-bottom: 40px;
+}
+
+.wr-open-hours form textarea {
+  height: 190px;
+  font-size: 18px;
+  opacity: 0.7;
+  margin-bottom: 40px;
+}
+
+.wr-open-hours form button {
+  width: 124px;
+  height: 50px;
+  padding: 18px 40px 19px 41px;
+  opacity: 0.7;
+  background-color: #ff3a2d;
+  color: #fff;
+}
+
 .webp .wr-banner { background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.8)), to(rgba(0, 0, 0, 0.5))), url(../media/bg/banner.webp); }
 
 .webp .wr-banner { background-image: -o-linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.5)), url(../media/bg/banner.webp); }
