@@ -85,6 +85,23 @@ button {
     }
 }
 
+.follow {
+    width: 186px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    a:hover {
+        svg {
+            fill: black;
+        }
+    }
+    svg {
+        width: 15px;
+        height: 15px;
+        fill: #808080;
+    }
+}
+
 input {
     padding: 0;
     border: none;
