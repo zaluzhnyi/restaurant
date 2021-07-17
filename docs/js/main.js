@@ -35,17 +35,15 @@ new Swiper('.promotions-container', {
         nextEl: '.next-arrow',
         prevEl: '.prev-arrow'
     },
-    // autoplay: {
-    //     delay: 5000,
-    // },
+    autoplay: {
+        delay: 5000,
+    },
     watchOverflow: true,
     spaceBetween: 31,
     breakpoints: {
-        380: {
-            slidesPerView: 1
-        },
+
         480: {
-            slidesPerView: 2
+            slidesPerView: 1
         },
         955: {
             slidesPerView: 3
@@ -66,15 +64,17 @@ new Swiper('.stuff-container', {
     autoplay: {
         delay: 5000,
     },
-    slidesPerView: 3,
     watchOverflow: true,
     spaceBetween: 31,
     breakpoints: {
-        380: {
+        480: {
             slidesPerView: 1
         },
-        955: {
+        855: {
             slidesPerView: 2
+        },
+        1024: {
+            slidesPerView: 3
         }
 
     }
@@ -85,9 +85,9 @@ new Swiper('.feedback-container', {
 
     slidesPerView: 1,
     watchOverflow: true,
-    // autoplay: {
-    //     delay: 5000,
-    // },
+    autoplay: {
+        delay: 5000,
+    },
     navigation: {
         nextEl: '.next-arrow',
         prevEl: '.prev-arrow'
@@ -106,12 +106,15 @@ new Swiper('.blog-container', {
         delay: 5000,
     },
     breakpoints: {
-        380: {
+        480: {
             slidesPerView: 1
         },
-        480: {
+        855: {
             slidesPerView: 2
         },
+        1024: {
+            slidesPerView: 3
+        }
 
     },
     slidesPerView: 3,

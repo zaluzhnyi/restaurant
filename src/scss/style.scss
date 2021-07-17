@@ -309,6 +309,9 @@
             .feedback-img {
                 height: 400px;
             }
+            svg {
+                transform: rotate(90deg);
+            }
             .feedback-block {
                 min-height: auto;
                 padding: 10px 15px;
@@ -316,6 +319,31 @@
                     width: 100%;
                 }
             }
+        }
+    }
+    .wr-letter {
+        padding: 100px 0;
+        .letter-container {
+            flex-direction: column;
+            form {
+                width: 100%;
+                margin: 20px 0;
+                input {
+                    padding: 10px 15px;
+                    width: 70%;
+                }
+                button {
+                    width: 30%;
+                }
+            }
+        }
+    }
+    .wr-open-hours {
+        .wrapper {
+            flex-direction: column;
+        }
+        form {
+            min-width: auto;
         }
     }
 }
@@ -1131,14 +1159,11 @@
 
 // wr-letter
 .wr-letter {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
     background-image: linear-gradient( rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.5)), url("../media/bg/letter.jpg");
     background-repeat: no-repeat;
     background-position: 0 0, center top;
     background-size: cover;
-    height: 100vh;
+    padding: 200px 0;
     .heading {
         align-items: flex-start;
         h3 {
