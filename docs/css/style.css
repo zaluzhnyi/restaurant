@@ -2624,6 +2624,14 @@ select:focus {
 }
 
 @media screen and (max-width: 479px) {
+  .wr-banner .wrapper {
+    height: 100%;
+  }
+
+  .wr-banner .intro {
+    margin: 15px 0;
+  }
+
   .btn-about {
     padding: 12px 24px;
   }
@@ -2710,25 +2718,6 @@ select:focus {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-  }
-}
-
-@media screen and (max-height: 320px) {
-  .intro {
-    margin-top: 15px;
-  }
-
-  .intro .intro-slide h2 {
-    font-size: 20px;
-  }
-
-  .intro .intro-slide h3 {
-    font-size: 30px;
-  }
-
-  .intro .intro-slide p {
-    line-height: 1.1;
-    margin-bottom: 20px;
   }
 }
 

@@ -180,25 +180,32 @@
     }
 }
 
-@media screen and (max-height: 320px) {
-    .intro {
-        margin-top: 15px;
-        .intro-slide {
-            h2 {
-                font-size: 20px;
-            }
-            h3 {
-                font-size: 30px;
-            }
-            p {
-                line-height: 1.1;
-                margin-bottom: 20px;
-            }
+// @media screen and (max-height:480px) {
+//     .intro {
+//         margin-top: 15px;
+//         .intro-slide {
+//             h2 {
+//                 font-size: 20px;
+//             }
+//             h3 {
+//                 font-size: 30px;
+//             }
+//             p {
+//                 line-height: 1.1;
+//                 margin-bottom: 20px;
+//             }
+//         }
+//     }
+// }
+@media screen and (max-width: 479px) {
+    .wr-banner {
+        .wrapper {
+            height: 100%;
+        }
+        .intro {
+            margin: 15px 0;
         }
     }
-}
-
-@media screen and (max-width: 479px) {
     .btn-about {
         padding: 12px 24px;
     }
