@@ -2601,7 +2601,7 @@ select:focus {
   }
 }
 
-@media screen and (max-width: 991px) {
+@media all and (max-width: 991px) {
   .button-position .prev-arrow,
   .button-position .next-arrow {
     width: 25px;
@@ -2658,7 +2658,7 @@ select:focus {
   }
 }
 
-@media screen and (max-width: 767px) {
+@media all and (max-width: 767px) {
   .intro-slide h2 {
     font-size: 24px;
   }
@@ -2698,7 +2698,7 @@ select:focus {
   }
 }
 
-@media screen and (max-width: 479px) {
+@media all and (max-width: 479px) {
   .wr-promotions .swiper-slide-active {
     width: 100%;
   }
@@ -2760,7 +2760,7 @@ select:focus {
     text-align: center;
   }
 
-  .wr-event-information .container .footer-container {
+  .wr-event-information .footer-container {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -2768,6 +2768,35 @@ select:focus {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+  }
+
+  .wr-event-information .footer-container .sponserd {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 100%;
+  }
+
+  .wr-event-information .footer-container .sponserd ul {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+
+  .wr-event-information .footer-container .sponserd ul li {
+    margin: 0;
+  }
+
+  .wr-event-information .footer-container .date {
+    margin-top: 15px;
+  }
+
+  .wr-event-information .footer-container button {
+    margin-top: 15px;
   }
 
   .wr-feedback .feedback-card {
@@ -2830,6 +2859,44 @@ select:focus {
 
   .wr-open-hours form {
     min-width: auto;
+  }
+
+  .wr-footer {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    text-align: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+
+  .wr-footer .introduction {
+    margin-top: 50px;
+  }
+
+  .wr-footer .footer-nav {
+    margin-top: 25px;
+  }
+
+  .wr-footer .insta-block {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+
+  .wr-footer .insta-block .foto-container {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
 }
 
