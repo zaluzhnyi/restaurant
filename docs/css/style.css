@@ -2593,6 +2593,14 @@ select:focus {
 }
 
 @media screen and (max-width: 767px) {
+  .intro-slide h2 {
+    font-size: 24px;
+  }
+
+  .intro-slide h3 {
+    font-size: 36px;
+  }
+
   .wr-preview .wrapper {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -2602,6 +2610,12 @@ select:focus {
 
   .wr-preview .book-table {
     width: 90%;
+  }
+
+  .wr-preview .welcome {
+    margin: 0;
+    padding: 0;
+    width: 100%;
   }
 
   .wr-about .about-image {
@@ -2625,7 +2639,20 @@ select:focus {
     margin-top: 50px;
   }
 
-  .menu-card {
+  .wr-menu .filter-menu {
+    min-width: 100%;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+
+  .wr-menu .filter-menu li {
+    margin: 0 10px;
+  }
+
+  .wr-menu .menu-card {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -2635,14 +2662,46 @@ select:focus {
             flex-grow: 1;
   }
 
-  .menu-card .food-image {
+  .wr-menu .menu-card .food-image {
     max-width: 100%;
     margin: 0;
   }
 
-  .menu-card .card-text {
+  .wr-menu .menu-card .card-text {
     padding: 0;
     margin-top: 10px;
+  }
+
+  .wr-event-information {
+    position: static;
+    height: 100%;
+  }
+
+  .wr-event-information .wrapper {
+    padding: 0;
+  }
+
+  .wr-event-information .container {
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    position: relative;
+    padding: 25px 10px;
+    -webkit-transform: translateY(0);
+        -ms-transform: translateY(0);
+            transform: translateY(0);
+    -webkit-box-shadow: none;
+            box-shadow: none;
+    text-align: center;
+  }
+
+  .wr-event-information .container .footer-container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
 }
 
