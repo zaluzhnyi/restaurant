@@ -144,6 +144,11 @@
     box-shadow: 9999px 0 0 #fff;
 }
 
+.intro {
+    max-width: 100%;
+    text-align: center;
+}
+
 .intro-slide {
     display: flex;
     flex-direction: column;
@@ -302,6 +307,8 @@
         margin-bottom: 50px;
         svg {
             margin: 0 10px;
+            width: 23px;
+            height: 23px;
         }
     }
     img {
@@ -472,7 +479,6 @@
 
 .information-container {
     width: 100%;
-    width: inherit;
     display: flex;
     justify-content: space-between;
     margin-top: 120px;
@@ -562,6 +568,52 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+}
+
+@media screen and (max-width: 991px) {}
+
+@media screen and (max-width: 767px) {
+    .wr-preview {
+        .wrapper {
+            flex-direction: column;
+        }
+        .book-table {
+            width: 90%;
+        }
+    }
+    .wr-about {
+        .about-image {
+            display: none;
+        }
+    }
+}
+
+@media screen and (max-width: 479px) {
+    .wr-about {
+        .about-text {
+            width: 100%;
+        }
+    }
+    .wr-delivary {
+        .information-container {
+            flex-direction: column;
+        }
+        .information-card {
+            margin-top: 50px;
+        }
+    }
+    .menu-card {
+        flex-direction: column;
+        flex-grow: 1;
+        .food-image {
+            max-width: 100%;
+            margin: 0;
+        }
+        .card-text {
+            padding: 0;
+            margin-top: 10px;
+        }
+    }
 }
 
 .menu-card {

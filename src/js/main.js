@@ -19,9 +19,9 @@ new Swiper('.intro', {
 
     slidesPerView: 1,
     watchOverflow: true,
-    autoplay: {
-        delay: 5000,
-    },
+    // autoplay: {
+    //     delay: 5000,
+    // },
     pagination: {
         el: ".swiper-pagination",
         clickable: true,
@@ -42,6 +42,9 @@ new Swiper('.promotions-container', {
     watchOverflow: true,
     spaceBetween: 31,
     breakpoints: {
+        380: {
+            slidesPerView: 1
+        },
         480: {
             slidesPerView: 2
         },
@@ -64,6 +67,15 @@ new Swiper('.stuff-container', {
     slidesPerView: 3,
     watchOverflow: true,
     spaceBetween: 31,
+    breakpoints: {
+        380: {
+            slidesPerView: 1
+        },
+        480: {
+            slidesPerView: 2
+        },
+
+    }
 
 });
 

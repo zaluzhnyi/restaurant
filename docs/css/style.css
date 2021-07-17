@@ -905,6 +905,11 @@ select:focus {
           box-shadow: 9999px 0 0 #fff;
 }
 
+.intro {
+  max-width: 100%;
+  text-align: center;
+}
+
 .intro-slide {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1117,6 +1122,8 @@ select:focus {
 
 .book-table h2 svg {
   margin: 0 10px;
+  width: 23px;
+  height: 23px;
 }
 
 .book-table img {
@@ -1336,7 +1343,6 @@ select:focus {
 
 .information-container {
   width: 100%;
-  width: inherit;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2584,6 +2590,60 @@ select:focus {
 
 .footer-nav ul li span {
   color: #00c5d2;
+}
+
+@media screen and (max-width: 767px) {
+  .wr-preview .wrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+
+  .wr-preview .book-table {
+    width: 90%;
+  }
+
+  .wr-about .about-image {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 479px) {
+  .wr-about .about-text {
+    width: 100%;
+  }
+
+  .wr-delivary .information-container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+
+  .wr-delivary .information-card {
+    margin-top: 50px;
+  }
+
+  .menu-card {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-flex: 1;
+        -ms-flex-positive: 1;
+            flex-grow: 1;
+  }
+
+  .menu-card .food-image {
+    max-width: 100%;
+    margin: 0;
+  }
+
+  .menu-card .card-text {
+    padding: 0;
+    margin-top: 10px;
+  }
 }
 
 .webp .wr-banner { background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.8)), to(rgba(0, 0, 0, 0.5))), url(../media/bg/banner.webp); }
