@@ -149,7 +149,73 @@
     text-align: center;
 }
 
-@media screen and (max-width: 991px) {}
+@media screen and(max-width: 1110px) {
+    .wr-menu {
+        .container-menu {
+            justify-content: center;
+        }
+    }
+}
+
+@media screen and (max-width: 991px) {
+    .button-position {
+        .prev-arrow,
+        .next-arrow {
+            width: 25px;
+            height: 25px;
+        }
+    }
+    .wr-banner {
+        .wrapper {
+            height: 100%;
+        }
+        .search-login {
+            p {
+                display: flex;
+                flex-wrap: wrap;
+                margin-right: 2%;
+            }
+            .search-container {
+                margin-right: 2%;
+            }
+        }
+        .intro {
+            margin: 15px 0;
+            .intro-btn {
+                .btn-about {
+                    padding: 8px 10px;
+                    height: 36px;
+                    width: 110px;
+                }
+                .btn-menu {
+                    padding: 8px 10px;
+                    height: 36px;
+                    width: 110px;
+                }
+            }
+        }
+    }
+    .wr-preview {
+        .book-table {
+            img {
+                display: none;
+            }
+        }
+    }
+    .wr-promotions {
+        .prev-arrow {
+            left: -12px;
+        }
+        .next-arrow {
+            right: -12px;
+        }
+    }
+    .wr-about {
+        .about-image {
+            display: none;
+        }
+    }
+}
 
 @media screen and (max-width: 767px) {
     .intro-slide {
@@ -173,44 +239,23 @@
             width: 100%;
         }
     }
-    .wr-about {
-        .about-image {
-            display: none;
+    .wr-menu {
+        .filter-menu {
+            min-width: 100%;
+            flex-wrap: wrap;
+            justify-content: center;
+            li {
+                margin: 0 10px;
+            }
         }
     }
 }
 
-// @media screen and (max-height:480px) {
-//     .intro {
-//         margin-top: 15px;
-//         .intro-slide {
-//             h2 {
-//                 font-size: 20px;
-//             }
-//             h3 {
-//                 font-size: 30px;
-//             }
-//             p {
-//                 line-height: 1.1;
-//                 margin-bottom: 20px;
-//             }
-//         }
-//     }
-// }
 @media screen and (max-width: 479px) {
-    .wr-banner {
-        .wrapper {
-            height: 100%;
+    .wr-promotions {
+        .swiper-slide-active {
+            width: 100%;
         }
-        .intro {
-            margin: 15px 0;
-        }
-    }
-    .btn-about {
-        padding: 12px 24px;
-    }
-    .btn-menu {
-        padding: 12px 24px;
     }
     .wr-about {
         .about-text {
@@ -226,19 +271,11 @@
         }
     }
     .wr-menu {
-        .filter-menu {
-            min-width: 100%;
-            flex-wrap: wrap;
-            justify-content: center;
-            li {
-                margin: 0 10px;
-            }
-        }
         .menu-card {
             flex-direction: column;
             flex-grow: 1;
             .food-image {
-                max-width: 100%;
+                width: 100%;
                 margin: 0;
             }
             .card-text {
@@ -263,6 +300,21 @@
             .footer-container {
                 flex-direction: column;
                 align-items: center;
+            }
+        }
+    }
+    .wr-feedback {
+        .feedback-card {
+            flex-direction: column;
+            .feedback-img {
+                height: 400px;
+            }
+            .feedback-block {
+                min-height: auto;
+                padding: 10px 15px;
+                p {
+                    width: 100%;
+                }
             }
         }
     }
@@ -691,12 +743,12 @@
 
 .menu-card {
     display: flex;
-    flex-basis: 46%;
+    width: 540px;
     flex-grow: 0;
     margin-bottom: 45px;
     .food-image {
-        max-width: 97px;
-        max-height: 101px;
+        width: 97px;
+        height: 101px;
         overflow: hidden;
         border-radius: 20px 0;
         margin-right: 15px;

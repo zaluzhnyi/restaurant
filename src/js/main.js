@@ -19,9 +19,9 @@ new Swiper('.intro', {
 
     slidesPerView: 1,
     watchOverflow: true,
-    // autoplay: {
-    //     delay: 5000,
-    // },
+    autoplay: {
+        delay: 5000,
+    },
     pagination: {
         el: ".swiper-pagination",
         clickable: true,
@@ -35,10 +35,9 @@ new Swiper('.promotions-container', {
         nextEl: '.next-arrow',
         prevEl: '.prev-arrow'
     },
-    autoplay: {
-        delay: 5000,
-    },
-    slidesPerView: 4,
+    // autoplay: {
+    //     delay: 5000,
+    // },
     watchOverflow: true,
     spaceBetween: 31,
     breakpoints: {
@@ -49,6 +48,9 @@ new Swiper('.promotions-container', {
             slidesPerView: 2
         },
         955: {
+            slidesPerView: 3
+        },
+        1200: {
             slidesPerView: 4
         }
 
@@ -71,9 +73,9 @@ new Swiper('.stuff-container', {
         380: {
             slidesPerView: 1
         },
-        480: {
+        955: {
             slidesPerView: 2
-        },
+        }
 
     }
 
@@ -83,9 +85,9 @@ new Swiper('.feedback-container', {
 
     slidesPerView: 1,
     watchOverflow: true,
-    autoplay: {
-        delay: 5000,
-    },
+    // autoplay: {
+    //     delay: 5000,
+    // },
     navigation: {
         nextEl: '.next-arrow',
         prevEl: '.prev-arrow'
@@ -102,6 +104,15 @@ new Swiper('.blog-container', {
     },
     autoplay: {
         delay: 5000,
+    },
+    breakpoints: {
+        380: {
+            slidesPerView: 1
+        },
+        480: {
+            slidesPerView: 2
+        },
+
     },
     slidesPerView: 3,
     watchOverflow: true,
