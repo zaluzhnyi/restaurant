@@ -2713,7 +2713,7 @@ select:focus {
   }
 }
 
-@media screen and (max-height: 700px) {
+@media screen and (max-height: 320px) {
   .intro {
     margin-top: 15px;
   }
