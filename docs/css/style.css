@@ -1897,7 +1897,7 @@ select:focus {
   text-align: center;
 }
 
-.wr-event-information .footer-container {
+.wr-event-information .event-information_footer {
   font-family: "Poppins-semibold", sans-serif;
   width: 100%;
   display: -webkit-box;
@@ -1909,34 +1909,34 @@ select:focus {
   margin-top: 73px;
 }
 
-.wr-event-information .footer-container ul {
+.wr-event-information .event-information_footer ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   margin-top: 19px;
 }
 
-.wr-event-information .footer-container ul li {
+.wr-event-information .event-information_footer ul li {
   max-width: 100%;
   height: 100%;
   overflow: hidden;
   margin-right: 27px;
 }
 
-.wr-event-information .footer-container ul li img {
+.wr-event-information .event-information_footer ul li img {
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
 }
 
-.wr-event-information .footer-container span {
+.wr-event-information .event-information_footer span {
   color: #ff3a2d;
   font-size: 18px;
   margin-bottom: 19px;
 }
 
-.wr-event-information .footer-container .date {
+.wr-event-information .event-information_footer .date {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1948,7 +1948,7 @@ select:focus {
   font-size: 16px;
 }
 
-.wr-event-information .footer-container button {
+.wr-event-information .event-information_footer button {
   width: 200px;
   height: 64px;
   padding: 24px 58px 23px;
@@ -2760,7 +2760,7 @@ select:focus {
     text-align: center;
   }
 
-  .wr-event-information .footer-container {
+  .wr-event-information .event-information_footer {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -2770,7 +2770,7 @@ select:focus {
             align-items: center;
   }
 
-  .wr-event-information .footer-container .sponserd {
+  .wr-event-information .event-information_footer .sponserd {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -2781,21 +2781,21 @@ select:focus {
     width: 100%;
   }
 
-  .wr-event-information .footer-container .sponserd ul {
+  .wr-event-information .event-information_footer .sponserd ul {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
   }
 
-  .wr-event-information .footer-container .sponserd ul li {
+  .wr-event-information .event-information_footer .sponserd ul li {
     margin: 0;
   }
 
-  .wr-event-information .footer-container .date {
+  .wr-event-information .event-information_footer .date {
     margin-top: 15px;
   }
 
-  .wr-event-information .footer-container button {
+  .wr-event-information .event-information_footer button {
     margin-top: 15px;
   }
 
@@ -2861,7 +2861,7 @@ select:focus {
     min-width: auto;
   }
 
-  .wr-footer {
+  .wr-footer .footer-container {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -2878,6 +2878,19 @@ select:focus {
 
   .wr-footer .footer-nav {
     margin-top: 25px;
+  }
+
+  .wr-footer .footer-nav ul {
+    width: 100%;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+  }
+
+  .wr-footer .footer-nav ul li {
+    margin-right: 5px;
   }
 
   .wr-footer .insta-block {
