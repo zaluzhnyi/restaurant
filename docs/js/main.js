@@ -64,9 +64,13 @@ new Swiper('.stuff-container', {
         nextEl: '.next-arrow',
         prevEl: '.prev-arrow'
     },
-    // autoplay: {
-    //     delay: 5000,
+    // pagination: {
+    //     el: ".swiper-pagination",
+    //     clickable: true,
     // },
+    autoplay: {
+        delay: 5000,
+    },
     watchOverflow: true,
     spaceBetween: 31,
     breakpoints: {
@@ -88,9 +92,9 @@ new Swiper('.feedback-container', {
 
     slidesPerView: 1,
     watchOverflow: true,
-    // autoplay: {
-    //     delay: 5000,
-    // },
+    autoplay: {
+        delay: 5000,
+    },
     navigation: {
         nextEl: '.next-arrow',
         prevEl: '.prev-arrow'
@@ -112,7 +116,7 @@ new Swiper('.blog-container', {
         480: {
             slidesPerView: 1
         },
-        655: {
+        650: {
             slidesPerView: 2
         },
         1024: {
@@ -120,7 +124,6 @@ new Swiper('.blog-container', {
         }
 
     },
-    slidesPerView: 3,
     watchOverflow: true,
     spaceBetween: 31,
 

@@ -39,6 +39,16 @@
     letter-spacing: 0.13px;
     padding-bottom: 26px;
     white-space: nowrap;
+    .phone-icon {
+        width: 30px;
+        height: 30px;
+        display: none;
+        svg {
+            width: inherit;
+            height: inherit;
+            fill: #fff;
+        }
+    }
     p {
         color: #fff;
         line-height: 1.07;
@@ -167,8 +177,6 @@
         }
         .search-login {
             p {
-                display: flex;
-                flex-wrap: wrap;
                 margin-right: 2%;
             }
             .search-container {
@@ -213,6 +221,14 @@
     }
 }
 
+@media all and(max-width:880px) {
+    .search-login {
+        p {
+            display: none;
+        }
+    }
+}
+
 @media all and (max-width: 767px) {
     .wr-banner {
         .burger-container {
@@ -228,6 +244,9 @@
                 width: 30px;
                 height: 30px;
                 z-index: 1201;
+                &.active {
+                    position: fixed;
+                }
                 &.active::before {
                     transform: rotate(45deg);
                     top: 14px;
@@ -306,6 +325,27 @@
                 font-size: 36px;
             }
         }
+        .search-login {
+            .phone-icon {
+                display: block;
+            }
+            .phone-text {
+                display: none;
+            }
+            .search-container {
+                input {
+                    width: 90px;
+                    padding: 0 0 0 6px;
+                }
+            }
+            .link-login {
+                margin-right: 2%;
+                width: min-content;
+                svg {
+                    display: none;
+                }
+            }
+        }
     }
     .wr-promotions {
         .swiper-slide-active {
@@ -323,7 +363,11 @@
             flex-direction: column;
         }
         .book-table {
-            width: 90%;
+            width: 100%;
+            min-width: 100%;
+            button {
+                padding: 12px 0;
+            }
         }
         .welcome {
             margin: 0;
@@ -343,6 +387,12 @@
         .information-card {
             margin-top: 50px;
         }
+    }
+    .wr-stuff {
+        .ellipse-top {
+            top: 50px;
+        }
+        overflow: hidden;
     }
     .wr-menu {
         .filter-menu {
@@ -376,6 +426,12 @@
         }
         position: static;
         height: 100%;
+        .heading {
+            z-index: 2;
+        }
+        .sticker {
+            opacity: 0.7;
+        }
         .container {
             box-sizing: border-box;
             position: relative;
@@ -407,6 +463,7 @@
         }
     }
     .wr-feedback {
+        overflow: hidden;
         .feedback-card {
             flex-direction: column;
             .feedback-img {
@@ -416,13 +473,14 @@
                     object-position: top;
                 }
             }
-            svg {
+            .connector {
                 transform: rotate(90deg);
             }
             .feedback-block {
                 min-height: auto;
                 padding: 10px 15px;
                 p {
+                    margin-top: 15px;
                     width: 100%;
                 }
             }
@@ -445,11 +503,22 @@
             }
         }
     }
+    .wr-blog {
+        overflow: hidden;
+    }
     .wr-open-hours {
         .wrapper {
             flex-direction: column;
         }
+        .time {
+            ul {
+                p {
+                    font-size: 15px;
+                }
+            }
+        }
         form {
+            margin-top: 20px;
             min-width: auto;
         }
     }

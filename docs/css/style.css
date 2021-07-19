@@ -767,6 +767,18 @@ select:focus {
   white-space: nowrap;
 }
 
+.search-login .phone-icon {
+  width: 30px;
+  height: 30px;
+  display: none;
+}
+
+.search-login .phone-icon svg {
+  width: inherit;
+  height: inherit;
+  fill: #fff;
+}
+
 .search-login p {
   color: #fff;
   line-height: 1.07;
@@ -2619,11 +2631,6 @@ select:focus {
   }
 
   .wr-banner .search-login p {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
     margin-right: 2%;
   }
 
@@ -2664,6 +2671,12 @@ select:focus {
   }
 }
 
+@media all and (max-width: 880px) {
+  .search-login p {
+    display: none;
+  }
+}
+
 @media all and (max-width: 767px) {
   .wr-banner .burger-container {
     height: 60px;
@@ -2686,6 +2699,10 @@ select:focus {
     width: 30px;
     height: 30px;
     z-index: 1201;
+  }
+
+  .wr-banner .burger-container .header-burger.active {
+    position: fixed;
   }
 
   .wr-banner .burger-container .header-burger.active::before {
@@ -2789,6 +2806,30 @@ select:focus {
     font-size: 36px;
   }
 
+  .wr-banner .search-login .phone-icon {
+    display: block;
+  }
+
+  .wr-banner .search-login .phone-text {
+    display: none;
+  }
+
+  .wr-banner .search-login .search-container input {
+    width: 90px;
+    padding: 0 0 0 6px;
+  }
+
+  .wr-banner .search-login .link-login {
+    margin-right: 2%;
+    width: -webkit-min-content;
+    width: -moz-min-content;
+    width: min-content;
+  }
+
+  .wr-banner .search-login .link-login svg {
+    display: none;
+  }
+
   .wr-promotions .swiper-slide-active {
     width: 100%;
   }
@@ -2809,7 +2850,12 @@ select:focus {
   }
 
   .wr-preview .book-table {
-    width: 90%;
+    width: 100%;
+    min-width: 100%;
+  }
+
+  .wr-preview .book-table button {
+    padding: 12px 0;
   }
 
   .wr-preview .welcome {
@@ -2831,6 +2877,14 @@ select:focus {
 
   .wr-delivary .information-card {
     margin-top: 50px;
+  }
+
+  .wr-stuff {
+    overflow: hidden;
+  }
+
+  .wr-stuff .ellipse-top {
+    top: 50px;
   }
 
   .wr-menu .filter-menu {
@@ -2878,6 +2932,14 @@ select:focus {
 
   .wr-event-information .wrapper {
     padding: 0;
+  }
+
+  .wr-event-information .heading {
+    z-index: 2;
+  }
+
+  .wr-event-information .sticker {
+    opacity: 0.7;
   }
 
   .wr-event-information .container {
@@ -2932,6 +2994,10 @@ select:focus {
     margin-top: 15px;
   }
 
+  .wr-feedback {
+    overflow: hidden;
+  }
+
   .wr-feedback .feedback-card {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -2949,7 +3015,7 @@ select:focus {
        object-position: top;
   }
 
-  .wr-feedback .feedback-card svg {
+  .wr-feedback .feedback-card .connector {
     -webkit-transform: rotate(90deg);
         -ms-transform: rotate(90deg);
             transform: rotate(90deg);
@@ -2961,6 +3027,7 @@ select:focus {
   }
 
   .wr-feedback .feedback-card .feedback-block p {
+    margin-top: 15px;
     width: 100%;
   }
 
@@ -2989,6 +3056,10 @@ select:focus {
     width: 30%;
   }
 
+  .wr-blog {
+    overflow: hidden;
+  }
+
   .wr-open-hours .wrapper {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -2996,7 +3067,12 @@ select:focus {
             flex-direction: column;
   }
 
+  .wr-open-hours .time ul p {
+    font-size: 15px;
+  }
+
   .wr-open-hours form {
+    margin-top: 20px;
     min-width: auto;
   }
 
