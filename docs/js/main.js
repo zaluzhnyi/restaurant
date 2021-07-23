@@ -142,10 +142,7 @@ $(document).ready(function() {
 
 });
 
-let btn = document.getElementById('btn');
-btn.addEventListener('click', function() {
-    this.classList.toggle('active', true);
-});
+
 
 function playVideo() {
     let popup = document.getElementById("myPopup");
@@ -156,4 +153,34 @@ function playVideo() {
         popup.pause();
     }
 
+}
+//filter
+let btnsContainer = document.querySelector('.filter-menu')
+
+btnsContainer.addEventListener('click', function(e) {
+    if (!e.target.closest("button")) return;
+    let btn = e.target.closest("button");
+    if (btn.classList.contains('active')) return;
+
+    let btns = Array.from(this.querySelectorAll('button'));
+
+    removeClass(btns, 'active');
+    btn.classList.add('active');
+
+    let btnId = btn.id;
+
+    let boxs = Array.from(document.querySelectorAll('.menu-card'));
+    removeClass(boxs, 'hide');
+    if (btnId === 'all') return;
+
+    boxs
+        .filter(box => box.dataset.box !== btnId)
+        .map(box => box.classList.add('hide'));
+
+});
+
+function removeClass(btnsArr, className) {
+    btnsArr
+        .filter(item => item.classList.contains(className))
+        .map(item => item.classList.remove(className));
 }

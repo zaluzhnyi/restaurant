@@ -308,15 +308,15 @@
                 </svg>
             </div>
             <ul class="filter-menu">
-                <li><button id="btn">All</button></li>
-                <li><button id="btn">Breakfast</button></li>
-                <li><button id="btn">Lunch</button></li>
-                <li><button id="btn">Dinner</button></li>
-                <li><button id="btn">Desart</button></li>
-                <li><button id="btn">Kids Menu</button></li>
+                <li><button class="active" id="all">All</button></li>
+                <li><button id="breakfast">Breakfast</button></li>
+                <li><button id="lunch">Lunch</button></li>
+                <li><button id="dinner">Dinner</button></li>
+                <li><button id="desart">Desart</button></li>
+                <li><button id="kids">Kids Menu</button></li>
             </ul>
             <div class="container-menu">
-                <div class="menu-card">
+                <div class="menu-card" data-box="dinner">
                     <div class="food-image"><img src="./media/icons/foods/slider_food2.jpg" alt="food"></div>
                     <div class="card-text">
                         <a href="#" class="name-food">Chicken Burger........................................</a>
@@ -324,7 +324,7 @@
                     </div>
                     <span class="price">$10.50</span>
                 </div>
-                <div class="menu-card">
+                <div class="menu-card" data-box="dinner">
                     <div class="food-image"><img src="./media/icons/foods/crispers.jpg" alt="food"></div>
                     <div class="card-text">
                         <a href="#" class="name-food">Santa Fe Crispers.....................................</a>
@@ -332,7 +332,7 @@
                     </div>
                     <span class="price">$12.50</span>
                 </div>
-                <div class="menu-card">
+                <div class="menu-card" data-box="lunch">
                     <div class="food-image"><img src="./media/icons/foods/dipper.jpg" alt="food"></div>
                     <div class="card-text">
                         <a href="#" class="name-food">Triple Dipper..............................................</a>
@@ -340,7 +340,7 @@
                     </div>
                     <span class="price">$8.90</span>
                 </div>
-                <div class="menu-card">
+                <div class="menu-card" data-box="breakfast">
                     <div class="food-image"><img src="./media/icons/foods/fiery.jpg" alt="food"></div>
                     <div class="card-text">
                         <a href="#" class="name-food">Crispy Fiery................................................</a>
@@ -348,7 +348,7 @@
                     </div>
                     <span class="price">$6.90</span>
                 </div>
-                <div class="menu-card">
+                <div class="menu-card" data-box="kids">
                     <div class="food-image"><img src="./media/icons/foods/wings.jpg" alt="food"></div>
                     <div class="card-text">
                         <a href="#" class="name-food">Boneless Wings.........................................</a>
@@ -356,7 +356,7 @@
                     </div>
                     <span class="price">$12.40</span>
                 </div>
-                <div class="menu-card">
+                <div class="menu-card" data-box="lunch">
                     <div class="food-image"><img src="./media/icons/foods/bowl.jpg" alt="food"></div>
                     <div class="card-text">
                         <a href="#" class="name-food">Chicken Mex Bowl...................................</a>
@@ -364,7 +364,7 @@
                     </div>
                     <span class="price">$11.40</span>
                 </div>
-                <div class="menu-card">
+                <div class="menu-card" data-box="kids">
                     <div class="food-image"><img src="./media/icons/foods/california.jpg" alt="food"></div>
                     <div class="card-text">
                         <a href="#" class="name-food">California Turkey.....................................</a>
@@ -372,7 +372,7 @@
                     </div>
                     <span class="price">$14.50</span>
                 </div>
-                <div class="menu-card">
+                <div class="menu-card" data-box="breakfast">
                     <div class="food-image"><img src="./media/icons/foods/pals.jpg" alt="food"></div>
                     <div class="card-text">
                         <a href="#" class="name-food">Pepper Pals................................................</a>
@@ -380,7 +380,7 @@
                     </div>
                     <span class="price">$14.50</span>
                 </div>
-                <div class="menu-card">
+                <div class="menu-card" data-box="lunch">
                     <div class="food-image"><img src="./media/icons/foods/bbq.jpg" alt="food"></div>
                     <div class="card-text">
                         <a href="#" class="name-food">House BBQ.................................................</a>
@@ -388,7 +388,7 @@
                     </div>
                     <span class="price">$18.30</span>
                 </div>
-                <div class="menu-card">
+                <div class="menu-card" data-box="desart">
                     <div class="food-image"><img src="./media/icons/foods/cake.jpg" alt="food"></div>
                     <div class="card-text">
                         <a href="#" class="name-food">Chocolate Cake.....................................</a>
