@@ -64,10 +64,10 @@ new Swiper('.stuff-container', {
         nextEl: '.next-arrow',
         prevEl: '.prev-arrow'
     },
-    // pagination: {
-    //     el: ".swiper-pagination",
-    //     clickable: true,
-    // },
+    pagination: {
+        el: ".swiper-pagination-stuff",
+        clickable: true,
+    },
     autoplay: {
         delay: 5000,
     },
@@ -105,6 +105,10 @@ new Swiper('.feedback-container', {
 
 new Swiper('.blog-container', {
 
+    pagination: {
+        el: ".swiper-pagination-blog",
+        clickable: true,
+    },
     navigation: {
         nextEl: '.next-arrow',
         prevEl: '.prev-arrow'
@@ -132,6 +136,7 @@ new Swiper('.blog-container', {
 $(document).ready(function() {
     $('.header-burger').click(function(event) {
         $('.header-burger , .header-nav').toggleClass('active');
+        $('body').toggleClass('lock');
     });
 });
 

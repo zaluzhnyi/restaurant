@@ -697,6 +697,12 @@ input {
   outline: none;
 }
 
+input,
+select {
+  -webkit-appearance: none;
+  border-radius: 0;
+}
+
 video {
   width: 800px;
 }
@@ -707,7 +713,6 @@ select:focus {
   -webkit-box-shadow: inset 0 0 0 1px black, 0 0 3px 1px #ff3a2d;
           box-shadow: inset 0 0 0 1px black, 0 0 3px 1px #ff3a2d;
   outline: none;
-  -webkit-appearance: none;
 }
 
 a:focus {
@@ -2403,7 +2408,7 @@ a:focus {
 .wr-contact .map {
   margin-top: 80px;
   width: 100vw;
-  height: 100vh;
+  height: 80vh;
   overflow: hidden;
 }
 
@@ -2785,6 +2790,10 @@ a:focus {
 }
 
 @media all and (max-width: 767px) {
+  body.lock {
+    overflow: hidden;
+  }
+
   .wr-banner .burger-container {
     height: 60px;
     background-color: #fff;
@@ -2885,6 +2894,7 @@ a:focus {
     height: 50%;
     background-color: #fff;
     z-index: 1200;
+    overflow: auto;
   }
 
   .wr-banner .header-nav ul {
@@ -2988,6 +2998,10 @@ a:focus {
     width: 100%;
   }
 
+  .wr-about .block .accordion span {
+    padding-right: 16px;
+  }
+
   .wr-delivary {
     padding: 70px 0;
   }
@@ -3007,12 +3021,25 @@ a:focus {
     overflow: hidden;
   }
 
+  .wr-stuff .swiper-pagination-stuff {
+    text-align: center;
+    margin-top: 15px;
+  }
+
+  .wr-stuff .swiper-pagination-bullet {
+    background-color: #00c5d2;
+  }
+
+  .wr-stuff .swiper-pagination-bullet-active {
+    background-color: #ff3a2d;
+  }
+
   .wr-stuff .ellipse-top {
     top: 50px;
   }
 
   .wr-menu .wrapper {
-    padding: 70px 0;
+    padding: 70px 15px;
   }
 
   .wr-menu .filter-menu {
@@ -3126,6 +3153,14 @@ a:focus {
     overflow: hidden;
   }
 
+  .wr-feedback .button-position .next-arrow {
+    right: -10px;
+  }
+
+  .wr-feedback .button-position .prev-arrow {
+    left: -10px;
+  }
+
   .wr-feedback .feedback-card {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -3188,6 +3223,19 @@ a:focus {
     overflow: hidden;
   }
 
+  .wr-blog .swiper-pagination-blog {
+    text-align: center;
+    margin-top: 15px;
+  }
+
+  .wr-blog .swiper-pagination-bullet {
+    background-color: #00c5d2;
+  }
+
+  .wr-blog .swiper-pagination-bullet-active {
+    background-color: #ff3a2d;
+  }
+
   .wr-open-hours .wrapper {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -3233,7 +3281,8 @@ a:focus {
   }
 
   .wr-footer .footer-nav ul li {
-    margin-right: 5px;
+    margin-right: 10px;
+    margin-top: 5px;
   }
 
   .wr-footer .insta-block {

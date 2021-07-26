@@ -1214,7 +1214,7 @@
     .map {
         margin-top: 80px;
         width: 100vw;
-        height: 100vh;
+        height: 80vh;
         overflow: hidden;
         iframe {
             width: inherit;
@@ -1501,6 +1501,11 @@
 }
 
 @media all and (max-width: 767px) {
+    body {
+        &.lock {
+            overflow: hidden;
+        }
+    }
     .wr-banner {
         .burger-container {
             height: 60px;
@@ -1575,6 +1580,7 @@
             height: 50%;
             background-color: #fff;
             z-index: 1200;
+            overflow: auto;
             ul {
                 z-index: 1;
                 flex-direction: column;
@@ -1656,6 +1662,9 @@
         .about-text {
             width: 100%;
         }
+        .block .accordion span {
+            padding-right: 16px;
+        }
     }
     .wr-delivary {
         padding: 70px 0;
@@ -1667,6 +1676,16 @@
         }
     }
     .wr-stuff {
+        .swiper-pagination-stuff {
+            text-align: center;
+            margin-top: 15px;
+        }
+        .swiper-pagination-bullet {
+            background-color: #00c5d2;
+        }
+        .swiper-pagination-bullet-active {
+            background-color: #ff3a2d;
+        }
         .ellipse-top {
             top: 50px;
         }
@@ -1674,7 +1693,7 @@
     }
     .wr-menu {
         .wrapper {
-            padding: 70px 0;
+            padding: 70px 15px;
         }
         .filter-menu {
             min-width: 100%;
@@ -1745,6 +1764,12 @@
     }
     .wr-feedback {
         overflow: hidden;
+        .button-position .next-arrow {
+            right: -10px;
+        }
+        .button-position .prev-arrow {
+            left: -10px;
+        }
         .feedback-card {
             flex-direction: column;
             .feedback-img {
@@ -1785,6 +1810,16 @@
         }
     }
     .wr-blog {
+        .swiper-pagination-blog {
+            text-align: center;
+            margin-top: 15px;
+        }
+        .swiper-pagination-bullet {
+            background-color: #00c5d2;
+        }
+        .swiper-pagination-bullet-active {
+            background-color: #ff3a2d;
+        }
         overflow: hidden;
     }
     .wr-open-hours {
@@ -1819,7 +1854,8 @@
                 flex-wrap: wrap;
                 justify-content: flex-end;
                 li {
-                    margin-right: 5px;
+                    margin-right: 10px;
+                    margin-top: 5px;
                 }
             }
         }
